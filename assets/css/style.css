@@ -1,0 +1,257 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.TopNavbar {
+  width: 100%;
+  background-color: #555;
+  padding: 10px;
+  font-size: 12px; }
+  .TopNavbar-menu {
+    margin: 0;
+    text-align: right;
+    list-style: none; }
+  .TopNavbar-item {
+    display: inline;
+    color: #969696; }
+  .TopNavbar-link {
+    text-decoration: none;
+    color: #fff; }
+  .TopNavbar-item:first-child .TopNavbar-link {
+    color: #969696; }
+  .TopNavbar-item:last-child .TopNavbar-link {
+    color: #00be8f; }
+  .TopNavbar-item:first-child::before {
+    content: ""; }
+  .TopNavbar-icon {
+    margin: 0 10px; }
+  .TopNavbar-item::before {
+    content: "•";
+    margin: 0 10px; }
+  .TopNavbar-item:last-child {
+    margin-right: 20px; }
+  @media (min-width: 768px) {
+    .TopNavbar {
+      font-size: 16px; } }
+
+.NavBar {
+  width: 100%;
+  padding: 10px 0;
+  background: #fff; }
+  .NavBar-logoBox {
+    display: inline-block;
+    text-align: center; }
+  .NavBar-logo {
+    display: inline-block; }
+  .NavBar-logoImg {
+    max-height: 50px; }
+  .NavBar-menuColapsed {
+    display: block;
+    float: right;
+    font-size: 30px;
+    color: #555; }
+  .NavBar-content {
+    display: none; }
+  .NavBar-link {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px; }
+  .NavBar-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 2px solid #0073a1;
+    background-color: #0087bd;
+    color: #fff;
+    font-size: 14px; }
+  .NavBar-menuItem {
+    display: block;
+    list-style: none; }
+  @media (min-width: 768px) {
+    .NavBar-menuColapsed {
+      display: none; }
+    .NavBar-content {
+      display: block;
+      float: right;
+      margin-top: 7px; }
+    .NavBar-menu {
+      display: inline-block;
+      list-style: none; }
+    .NavBar-menuItem {
+      padding-right: 10px;
+      display: inline; }
+    .NavBar-buttonContainer {
+      display: inline-block; }
+    .NavBar-button {
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    .NavBar-menuItem {
+      padding-right: 20px; }
+    .NavBar-link {
+      font-size: 16px; } }
+
+.NavBar-content--show {
+  display: block; }
+
+.HeroBanner {
+  position: relative; }
+  .HeroBanner-image {
+    width: 100%; }
+  .HeroBanner-containerInfo {
+    position: absolute;
+    width: 240px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+  .HeroBanner-title {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #555; }
+  .HeroBanner-description {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 1px 1px #555; }
+  .HeroBanner-search {
+    position: relative;
+    background: #00be8f;
+    border-radius: 5px; }
+  .HeroBanner-input {
+    height: 30px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: #c0c0c0;
+    font-size: 12px;
+    width: 85%; }
+    .HeroBanner-input::-webkit-input-placeholder {
+      color: #c0c0c0; }
+    .HeroBanner-input:-ms-input-placeholder {
+      color: #c0c0c0; }
+    .HeroBanner-input::placeholder {
+      color: #c0c0c0; }
+  .HeroBanner-icon {
+    margin-left: 7px;
+    color: #fff; }
+  @media (min-width: 768px) {
+    .HeroBanner-containerInfo {
+      width: 340px; }
+    .HeroBanner-icon {
+      margin-left: 14px; } }
+
+.FeaturedCourses {
+  height: auto;
+  padding-bottom: 10px;
+  background-color: #ecf1f4; }
+  .FeaturedCourses-title {
+    font-weight: lighter;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #999; }
+  .FeaturedCourses-infoBox {
+    height: 170px;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px; }
+  .FeaturedCourses-infoTitle, .FeaturedCourses-infoCompany {
+    padding-bottom: 5px; }
+  .FeaturedCourses-infoDuration {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px; }
+  .FeaturedCourses-infoCompany {
+    text-transform: uppercase;
+    color: #9da9a8; }
+  .FeaturedCourses-buttonContainer {
+    padding-top: 10px; }
+  .FeaturedCourses-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #3aba92;
+    color: #fff; }
+  @media (min-width: 768px) {
+    .FeaturedCourses-container {
+      background: #fff; }
+    .FeaturedCourses-infoBox {
+      height: 140px;
+      padding: 0 20px;
+      position: relative;
+      text-align: left; }
+    .FeaturedCourses-info {
+      position: absolute;
+      width: 92%;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+    .FeaturedCourses-button {
+      width: 20%;
+      padding: 5px; }
+    .FeaturedCourses-infoTitle, .FeaturedCourses-infoCompany {
+      padding-bottom: 10px; } }
+  @media (min-width: 1024px) {
+    .FeaturedCourses-info {
+      width: 94%; }
+    .FeaturedCourses-infoBox {
+      height: 182px; }
+    .FeaturedCourses-infoTitle, .FeaturedCourses-infoCompany {
+      padding-bottom: 15px; } }
+
+.columns.nopadding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.Results {
+  background-color: #ecf1f4;
+  padding-bottom: 20px; }
+  .Results-containerBox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .Results-infoBox {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc; }
+  .Results-infoTitle, .Results-infoCompany {
+    padding-bottom: 15px; }
+  .Results-infoDuration {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px; }
+  .Results-infoCompany {
+    text-transform: uppercase;
+    color: #9da9a8; }
+  .Results-buttonContainer {
+    padding-top: 20px; }
+  .Results-button {
+    width: 40%;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #3aba92;
+    color: #fff; }
+  .Results-title {
+    font-weight: lighter;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #999; }
+  .Results-titleColor {
+    font-weight: normal;
+    color: #3aba92; }
+  @media (min-width: 768px) {
+    .Results-containerBox {
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .Results-infoBox {
+      width: 50%;
+      margin: 0 20px 20px 0; }
+      .Results-infoBox:last-child {
+        margin-right: 0; } }
+  @media (min-width: 1024px) {
+    .Results-infoBox {
+      width: 33.33%; } }
